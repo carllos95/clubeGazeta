@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Jquery scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- Scripts proprio -->
+    <script src="js/script.js"></script>
+
+    <title>Clube Gazeta</title>
+</head>
+
+<body>
+    <!-- Header container -->
+    <header>
+        <!-- Topo da página. contém logo e menu -->
+        <div class="top-header">
+           <div class="th-content">
+               <div class="logo">
+                   <a href="#"><img src="images/logo.png" alt=""></a>
+               </div>
+               <div class="menu">
+                   <div class="menu-hamburguer">
+                        <i class="fas fa-bars"></i>
+                   </div>
+                   <ul class="animated fadeInDown">
+                       <li class="close-menu">
+                            <i class="fas fa-times"></i>
+                       </li>
+                       <li>
+                           <a href="#sobre">Sobre</a>
+                       </li>
+                       <li>
+                           <a href="#descontos">Descontos</a>
+                       </li>
+                       <li>
+                           <a href="#contato">Contato</a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+    </header>
+
+    <!-- Main container -->
+    <main>
+        <!-- Banner container -->
+        <div id="sobre" class="banner">
+            <div class="banner-content">
+                <div class="banner-info">
+                    <h2>Clube de descontos</h2>
+                    <p>O Clube de descontos é uma forma de conseguir benefícios em diversos estabelecimentos. Assinando o nosso Clube de descontos, você pode ter descontos exclusivos disponibilizados por nossos parceiros.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input para filtrar os parceiros -->
+        <div class="top">
+            <h1>Nossos Parceiros</h1>
+            <div class="top-content">
+                <form onkeydown="return event.key != 'Enter';">
+                    <input id="pesquisa" name="search_field" type="text" placeholder="Buscar">
+                </form>
+            </div>
+        </div>
+
+        <!-- Main container - Cards populados pelo map -->
+        <div id="descontos" class="main">
+            <div id="main-content" class="main-content">
+              <div style="display:none;" id="notFound">ok</div>
+            </div>
+            <div class="main-button">
+                <a href="javascript:void(0)" onclick=countIncrement();>Carregar mais parceiros</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer container -->
+    <footer>
+        <!-- Footer container -->
+        <div id="contato" class="footer">
+            <div class="footer-content">
+                <div class="logo-footer">
+                    <a href="#">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                    <div class="footer-medias">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-menu">
+                    <h2>Menu</h2>
+                    <ul>
+                        <li>
+                            <a href="#sobre">
+                                Sobre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#desconto">
+                                Descontos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contato">
+                                Fale conosco
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h2>Fale Conosco</h2>
+                    <div class="footer-contato">
+                        <a href="tel:+554130003000">
+                            (41) 3000-3000
+                        </a>
+                        <a href="https://wa.me/5541999009900" target="_blank">
+                            (41) 99900-9900
+                            
+                        </a>
+                        <a href="mailto: contato@contato.com.br">
+                            contato@contato.com.br
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
